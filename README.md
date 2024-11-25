@@ -6,6 +6,12 @@ Use this link to dowload the CIFAR 100 dataset https://www.cs.toronto.edu/~kriz/
 or load at runtime
 trainset = torchvision.datasets.CIFAR100(root='./data', train=True, download=True, transform=transform)
 trainloader = DataLoader(trainset, batch_size=32, shuffle=True)
+# similarity
+ Text 'cat': 0.1962
+   Text 'dog': 0.2110
+   Text 'deer': 0.1888
+   Text 'bird': 0.2125
+   Text 'frog': 0.2132
 
 
 ## Multimodal Question-Answering System

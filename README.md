@@ -1,5 +1,5 @@
 We are buidling a QnA system using CLIP Multi-model. 
-# clip with cifar 100 dataset to validate zero shot 
+# Clip with cifar 100 dataset to validate zero shot 
 To implement it on colab
 The code below performs zero-shot prediction using CLIP. This example takes an image from the CIFAR-100 dataset, and predicts the most likely labels among the 100 textual labels from the dataset.
 Use this link to dowload the CIFAR 100 dataset https://www.cs.toronto.edu/~kriz/cifar.html. Then upload CIFAR100 dataset under content folder in colab

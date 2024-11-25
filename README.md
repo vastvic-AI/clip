@@ -6,6 +6,8 @@ Use this link to dowload the CIFAR 100 dataset https://www.cs.toronto.edu/~kriz/
 or load at runtime
 trainset = torchvision.datasets.CIFAR100(root='./data', train=True, download=True, transform=transform)
 trainloader = DataLoader(trainset, batch_size=32, shuffle=True)
+# code 
+Run clip-similarity.ipynb for getting cosine similarity score for each image classification data
 # similarity
  Text 'cat': 0.1962
    Text 'dog': 0.2110

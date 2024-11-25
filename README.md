@@ -8,30 +8,27 @@ trainset = torchvision.datasets.CIFAR100(root='./data', train=True, download=Tru
 trainloader = DataLoader(trainset, batch_size=32, shuffle=True)
 
 
-##Multimodal Question-Answering System
+## Multimodal Question-Answering System
 #Overview
 This system integrates image and text data to provide context-aware answers to user questions. By leveraging OpenAI's CLIP model, it embeds both image and textual data into the same vector space, ensuring seamless correlation between them. Additionally, the system uses a T5 language model to generate detailed answers by complementing information from both modalities.
 
-#Key features include:
+# Key features include:
 
 Image understanding: Extract features like color, shape, and type directly from the image.
 Document integration: Read supporting textual documents to enhance the context for question answering.
 Multimodal fusion: Combines image and text data to provide accurate, context-aware answers.
 Dynamic embedding alignment: Places image and text embeddings closer together for better correlation.
 
-#install dependencies
+# install dependencies
 pip install torch torchvision transformers openai-clip pillow scikit-learn
 
-#Requirement
+# Requirement
 Uplaod image of bike available in folder and upload in /content/bike....png folder
 
-Below is a refined and detailed README document for your multimodal question-answering system. It provides an overview, installation instructions, and a clear explanation of the system's functionality.
 
-Multimodal Question-Answering System
-Overview
 This system integrates image and text data to provide context-aware answers to user questions. By leveraging OpenAI's CLIP model, it embeds both image and textual data into the same vector space, ensuring seamless correlation between them. Additionally, the system uses a T5 language model to generate detailed answers by complementing information from both modalities.
 
-Key features include:
+# Key features include:
 
 Image understanding: Extract features like color, shape, and type directly from the image.
 Document integration: Read supporting textual documents to enhance the context for question answering.
@@ -42,19 +39,12 @@ To set up the system, follow these steps:
 
 Clone the repository:
 
-bash
-Copy code
-git clone <repository_url>
-cd multimodal-qna
-Install dependencies: Install the required libraries using pip:
-
-bash
-Copy code
 pip install torch torchvision transformers openai-clip pillow scikit-learn
+
 Download Models:
 
 #CLIP: The model will be downloaded automatically when the script runs.
-Gpt-4/T5 model will also be downloaded automatically when the script initializes.
+Gpt-4 model will also be downloaded automatically when the script initializes.
 Usage
 Input Requirements
 Image: Provide the path to the image for analysis.
@@ -63,7 +53,7 @@ Question: Ask a question about the image, document, or both.
 Run the System
 The system processes the input image and document, places their embeddings in the same vector space, and uses similarity calculations to provide the best answer. Here's how to run it:
 
-#code
+# code
 # Import the multimodal system
 from multimodal_qna_system import process_image, process_text, find_most_relevant, generate_answer_t5
 
@@ -110,5 +100,5 @@ If the answer is strongly related to the image, a description of the image is us
 Otherwise, the most relevant text snippet from the document is selected.
 Gpt generates a detailed, context-aware answer by combining the selected information.
 
-#Sample Question
+# Sample Question
 question = "What is this object in the image and tell me about its grips?"

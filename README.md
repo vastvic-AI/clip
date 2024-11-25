@@ -110,3 +110,7 @@ Gpt generates a detailed, context-aware answer by combining the selected informa
 
 # Sample Question
 question = "What is this object in the image and tell me about its grips?"
+
+#Answer 
+Image Description: bicycle
+Answer: The object in the image is a bicycle. As per the text description, it has ergonomic grips designed for comfortable riding.
